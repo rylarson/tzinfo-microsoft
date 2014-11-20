@@ -1,0 +1,14 @@
+# encoding: UTF-8
+
+# This file contains data derived from the Unicode CLDR
+# (http://unicode.org/repos/cldr/trunk/common/supplemental/windowsZones.xml).
+
+module TZInfo
+    module Microsoft
+        module Definitions
+            include TimezoneDefinition
+
+            linked_timezone '<%= windows_zone %>', '<%= iana_zone %>'
+        end
+    end
+end
